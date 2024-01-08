@@ -1,13 +1,122 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Poppins', sans-serif;
+}
+
+.note{
+  background-color: #32a85a;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+
+
+.note.new {
+  background-color: rgb(57, 192, 192);
+}
+
+textarea{
+  border: none;
+  resize: none;
+  background-color: rgb(57, 192, 192);
+}
+
+textarea:focus{
+  outline: none;
+}
+
+
+.create{
+  border: none;
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+.create:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background-color: rgb(233, 233, 233);
+}
+
+.header p{
+  font-weight: normal;
+  font-size: xx-large;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switch{
+  border: none;
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+.switch:hover{
+  background-color: black;
+  color: #ededed;
+  cursor: pointer;
+}
+
+.dark-mode{
+  background-color: black;
+}
+
+.dark-mode p{
+  color: white;
 }
